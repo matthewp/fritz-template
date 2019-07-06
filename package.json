@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "fritz dev",
     "prerender": "fritz prerender",
     "build:client": "fritz build --client",
     "build:server": "fritz build --server",
