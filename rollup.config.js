@@ -13,6 +13,36 @@ const nodeExternals = [
 ];
 
 export default {
+  worker: {
+    input: 'src/app/app.js',
+    output: {
+      dir: 'public',
+      format: 'iife'
+    },
+    plugins: [
+      string({
+        include: `**/*.css`
+      }),
+      json(),
+      nodeResolve({}),
+      commonjs({})
+    ]
+  },
+
+  window: {
+    input: 'src/app/window.js',
+    output: {
+      dir: 'public',
+      format: 'es',
+      chunkFileNames: '[name].js'
+    },
+    plugins: [
+      json(),
+      nodeResolve({}),
+      commonjs({})
+    ]
+  },
+
   server: {
     input: 'build/temp/server.js',
     external: Array.from(nodeExternals),

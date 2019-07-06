@@ -1,5 +1,6 @@
-import fritz, { h } from 'fritz';
+import { h } from 'fritz';
+import '../app/app.js';
 
 export default function() {
-  return h('div', null, 'Hello world');
+  return h('my-app');
 };
