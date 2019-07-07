@@ -2,7 +2,9 @@ import fritz, { Component, h } from 'fritz';
 
 class App extends Component {
   render() {
-    return h('div', null, 'Hello world!');
+    return (
+      <main>Hello world!</main>
+    );
   }
 }
 

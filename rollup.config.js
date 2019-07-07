@@ -3,6 +3,7 @@ import globals from 'rollup-plugin-node-globals';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import { string } from 'rollup-plugin-string';
 import json from 'rollup-plugin-json';
+import sucrase from 'rollup-plugin-sucrase';
 
 const nodeExternals = [
   'url', 'http', 'util', 'https', 'zlib', 'stream', 'path',
@@ -23,6 +24,12 @@ export default {
       }),
       json(),
       nodeResolve({}),
+      sucrase({
+        exclude: ['node_modules/**'],
+        transforms: ['jsx'],
+        jsxPragma: 'h',
+        jsxFragmentPragma: 'Fragment'
+      }),
       commonjs({})
     ]
   },
