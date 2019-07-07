@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "fritz dev",
     "prerender": "fritz prerender",
+    "build": "npm run build:client && npm run build:server",
     "build:client": "fritz build --client",
     "build:server": "fritz build --server",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,8 +23,8 @@
   },
   "homepage": "https://github.com/matthewp/fritz-template#readme",
   "devDependencies": {
-    "fritz": "^4.0.1",
-    "fritz-cli": "^0.1.0",
+    "fritz": "^5.0.0-alpha.0",
+    "fritz-cli": "0.2.0",
     "fritz-render-to-string": "^1.0.0-alpha.0",
     "rollup": "^1.16.6",
     "rollup-plugin-commonjs": "^10.0.1",
