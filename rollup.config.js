@@ -1,4 +1,3 @@
-import builtins from 'rollup-plugin-node-builtins';
 import commonjs from 'rollup-plugin-commonjs';
 import globals from 'rollup-plugin-node-globals';
 import nodeResolve from 'rollup-plugin-node-resolve';
@@ -56,8 +55,7 @@ export default {
       json(),
       nodeResolve({}),
       commonjs({}),
-      globals(),
-      builtins()
+      globals()
     ]
   }
 };
