@@ -61,6 +61,12 @@ export default {
       }),
       json(),
       nodeResolve({}),
+      sucrase({
+        exclude: ['node_modules/**'],
+        transforms: ['jsx'],
+        jsxPragma: 'h',
+        jsxFragmentPragma: 'Fragment'
+      }),
       commonjs({}),
       globals()
     ]
