@@ -152,12 +152,12 @@ fritz-cli@0.2.0:
     strip-indent "^3.0.0"
 
 fritz-render-to-string@^1.0.0-alpha.0:
-  version "1.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/fritz-render-to-string/-/fritz-render-to-string-1.0.0-alpha.3.tgz#ebf4f3969998306663ef13baf3d687a9d0f78f45"
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/fritz-render-to-string/-/fritz-render-to-string-1.0.0-alpha.6.tgz#d70506f5d5efb658706f74549a9ba0d0e82d6e04"
 
 fritz@^5.0.0-alpha.0:
-  version "5.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/fritz/-/fritz-5.0.0-alpha.0.tgz#fdcfe2b4e4187fd25ae0722922457cc8afc09a88"
+  version "5.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/fritz/-/fritz-5.0.0-alpha.1.tgz#904105d4ef12d41894af06443d0daacc3d38112e"
 
 graceful-fs@^4.1.2:
   version "4.2.0"
